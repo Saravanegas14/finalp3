@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>suma</title>
+	<div class="ti"><h1>Calculadora </h1></div>
+   <div class="sul"><h1>Suma </h1></div>
+   <div class="rel"><h1>Resta </h1></div>
+   <div class="dil"><h1>Division </h1></div>
+   <div class="mule"><h1>Multiplicacion </h1></div>
+   <div class="rele"><h1>Resultado </h1></div>
+   
+   <div class="co1"><h1>Comentaria: </h1></div>
+   <div class="co"><h1>La actividad me pareció muy interesante y muy practica para repasar lo visto en clase</h1></div>
+
+	<style>
+
+		.ti{
+ 
+position: absolute;
+ top: -20px;
+ left:500px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+ opacity: 0.9;
+ text-shadow: 2px 2px #17202A;
+   animation-name: ulidos;
+  animation-duration:2s;
+  animation-iteration-count: infinite; 
+  font-size: 25px;
+   
+} 
+@keyframes ulidos{  
+ 33%{color:#000000 ;  } 
+ 66%{color:#F48FB1 ;  }
+ 99%{color:#BA68C8 ;  }
+
+}
+	.sul{
+ 
+position: absolute;
+ top: 80px;
+ left: 280px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+  color:#BA68C8;
+ 
+}
+.rel{
+ 
+position: absolute;
+ top: 80px;
+ left: 540px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+  color:#BA68C8;
+ 
+ 
+}
+.dil{
+ 
+position: absolute;
+ top: 80px;
+ left: 1120px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s; 
+  color:#BA68C8;
+}
+.mule{
+position: absolute;
+ top: 80px;
+ left: 780px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+  color:#BA68C8;
+}
+.rele{
+position: absolute;
+ top: 320px;
+ left: 600px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+  color:#BA68C8;
+}
+	.resul {
+			position: absolute;
+			top: 400px;
+			left: 450px;
+			width: 500px;
+			height: 200px;
+			background: #F48FB1;
+			color: white;
+			border:solid #000000 2px;
+			font-size: 50px;
+		}
+		.su {
+			position: absolute;
+			top: 150px;
+			left: 250px;
+			width: 150px;
+			height: 150px;
+			background:#64B5F6 ;
+			border:solid #000000 2px;
+			font-size: 50px;
+
+		}
+		.re {
+			position: absolute;
+			top: 150px;
+			left: 500px;
+			width: 150px;
+			height: 150px;
+			background: #AB47BC ;
+			border:solid #000000 2px;
+			font-size: 50px;
+
+		}.mul {
+			position: absolute;
+			top: 150px;
+			left: 800px;
+			width: 150px;
+			height: 150px;
+			background:#9575CD;
+			border:solid #000000 2px;
+			font-size: 50px;
+
+		}.divi {
+			position: absolute;
+			top: 150px;
+			left: 1100px;
+			width: 150px;
+			height: 150px;
+			background: #BA68C8;
+			border:solid #000000 2px;
+			font-size: 50px;
+		}
+		.co{
+			position: absolute;
+ top: 700px;
+ left: 80px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+  color:#000000;}
+
+		.co1 {
+position: absolute;
+ top: 600px;
+ left: 80px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ transition: transform .4s;
+  color:#BA68C8;
+		}
+
+.n{
+position: absolute;
+ top: 90px;
+ left:20px;
+ height: 200px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ color:#BA68C8;
+}
+
+.n1{
+position: absolute;
+ top: 200px;
+ left:20px;
+ background-color:#BA68C8;
+ border-radius: 9000px;
+  border-style: dotted;
+ 
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ color:#BA68C8;
+}
+.n2{
+position: absolute;
+ top: 250px;
+ left:20px;
+ font-family: Copperplate, Papyrus, fantasy, monospace;
+ color:#BA68C8;
+  background-color:#BA68C8;
+ border-radius: 9000px;
+  border-style: dotted;
+
+}
+
+	</style>
+</head>
+<body>
+
+<form>
+	
+	<br>	<br>	<br>	<br>
+
+	<input type="text" id="numero1" placeholder="numero1"></div>
+	<br>	<br>	<br>	<br>
+	<input type="text" id="numero2" placeholder="numero2"></div>
+	</br></br></br></br></br></br>
+</br>
+</form>
+
+<div class="su" onclick="era()" id="´suma1"></div>
+<div class="re" onclick="er()" id="´suma1"></div>
+<div class="mul" onclick="e()" id="´suma1"></div>
+<div class="divi" onclick="d()" id="´suma1"></div>
+<div class="resul" onclick="era()" id="suma1"></div>
+
+
+<script>
+	function era(){
+		x=Number(numero1.value);
+		y=Number(numero2.value);
+		suma= x+y;
+		console.log(suma);
+		suma1.innerHTML=suma;
+
+	}
+
+function er(){
+		x=Number(numero1.value);
+		y=Number(numero2.value);
+		resta= x-y;
+		console.log(resta);
+		suma1.innerHTML=resta;
+	}
+		function e(){
+		x=Number(numero1.value);
+		y=Number(numero2.value);
+		mul= x*y;
+		console.log(mul);
+		suma1.innerHTML=mul;
+	}
+	function d(){
+		x=Number(numero1.value);
+		y=Number(numero2.value);
+		di= x/y;
+		console.log(di);
+		suma1.innerHTML=di;
+	}
+	</script>
+
+
+</body>
+</html>
